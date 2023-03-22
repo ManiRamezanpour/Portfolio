@@ -22,7 +22,7 @@ export default function ThemeBtn() {
          <Switch
             checked={isDarks}
             onChange={() => setIsDarks(!isDarks)}
-            className={`${isDarks ? 'bg-[#2096F3]' : 'bg-[#CCCCCC]'}
+            className={`${isDarks ? 'bg-primary' : 'bg-[#CCCCCC]'}
           relative inline-block w-[50px] h-[26px] rounded-xl`}
          >
             <span
