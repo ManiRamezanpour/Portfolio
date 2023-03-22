@@ -1,0 +1,10 @@
+@font-face {
+   font-family: Primary;
+   src: url('../assets/font/Baloo\ Paaji\ Regular\ 400.ttf');
+}
+body{
+    font-family: Primary
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
