@@ -4,15 +4,23 @@ import ListItem from '../List'
 const Header = () => {
    let listItem = [{ name: 'Home' }, { name: 'About' }, { name: 'Expreince' }]
    return (
-      <header className="flex flex-row items-center justify-around h-16 mt-10 text-white bg-secondary rounded-2xl">
-         <h1 className="py-3 text-4xl font-bold text-white">ManiRmp</h1>
-         <ul className="flex items-center justify-center">
-            {listItem.map((item) => (
-               <ListItem name={item.name} />
-            ))}
-         </ul>
+      <header className="flex items-center justify-between">
+         <h1 className="py-3 text-4xl font-bold text-primary">ManiRmp</h1>
          <div>
-            <ThemeBtn />
+            <ul className="flex">
+               <li className="px-2 py-1 text-xl cursor-pointer hover:bg-primary hover:text-white rounded-2xl ">
+                  Home
+               </li>
+               <li className="px-2 py-1 text-xl cursor-pointer hover:bg-primary hover:text-white rounded-2xl ">
+                  About Me
+               </li>
+               <li className="px-2 py-1 text-xl cursor-pointer hover:bg-primary hover:text-white rounded-2xl ">
+                  Skills
+               </li>
+               <li className="px-2 py-1 text-xl cursor-pointer hover:bg-primary hover:text-white rounded-2xl ">
+                  Projects
+               </li>
+            </ul>
          </div>
       </header>
    )
