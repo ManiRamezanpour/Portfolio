@@ -3,7 +3,7 @@ import img from '../../assets/SVG/manOnTable.svg'
 import UnFillbtn from '../Buttons/UnFillBtn'
 const AboutME = () => {
    return (
-      <section className="flex items-center justify-center w-full h-screen">
+      <section className="flex flex-col items-center justify-center w-full h-screen md:flex-row">
          <div>
             <img src={img} className="w-9xl" />
          </div>

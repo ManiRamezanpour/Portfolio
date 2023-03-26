@@ -6,15 +6,17 @@ const Footer = () => {
    const date = new Date()
    return (
       <>
-         <hr className="w-full" />
-         <footer className="flex items-center justify-between">
+         {/* <hr className="w-full" /> */}
+         <footer className="flex items-center justify-between py-2 border-t">
             <div>
-               <h1>Create by Mani with love in {date.getFullYear()}</h1>
+               <h1 className="text-xl text-secondary">
+                  Create by Mani with love in {date.getFullYear()}
+               </h1>
             </div>
             <div className="flex">
-               <FaLinkedinIn />
-               <FaTelegramPlane />
-               <SiGmail />
+               <FaLinkedinIn className="mx-3 cursor-pointer w-7 h-7 hover:text-primary" />
+               <FaTelegramPlane className="cursor-pointer w-7 h-7 hover:text-primary" />
+               <SiGmail className="mx-3 cursor-pointer w-7 h-7 hover:text-primary" />
             </div>
          </footer>
       </>

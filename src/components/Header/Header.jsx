@@ -1,6 +1,5 @@
 import * as React from 'react'
 import ThemeBtn from '../Buttons/ThemeBtn'
-import ListItem from '../List'
 const Header = () => {
    let listItem = [{ name: 'Home' }, { name: 'About' }, { name: 'Expreince' }]
    return (

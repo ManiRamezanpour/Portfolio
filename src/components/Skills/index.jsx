@@ -12,7 +12,7 @@ import { SiTailwindcss } from '@react-icons/all-files/si/SiTailwindcss'
 import React from 'react'
 const Skilss = () => {
    return (
-      <section className="flex items-center justify-center w-full h-screen">
+      <section className="flex flex-col items-center justify-center w-full h-screen md:flex-row">
          <div>
             <img src={img} alt="" className="h-96" />
          </div>
