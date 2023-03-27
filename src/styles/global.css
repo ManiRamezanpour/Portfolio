@@ -2,9 +2,18 @@
    font-family: Primary;
    src: url('../assets/font/Baloo\ Paaji\ Regular\ 400.ttf');
 }
-body{
-    font-family: Primary
+@font-face {
+   font-family: Mostera;
+   src: url('../assets//font/Montserrat-VariableFont_wght.ttf');
+}
+body {
+   font-family: Primary;
 }
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+   .aboutme {
+      font-family: Mostera;
+   }
+}

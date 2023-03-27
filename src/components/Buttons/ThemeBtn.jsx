@@ -1,28 +1,29 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Switch } from '@headlessui/react'
 import light from '../../assets/SVG/2600.png'
 import darkbutton from '../../assets/SVG/1f31c.png'
-import { useEffect } from 'react'
-export default function ThemeBtn() {
+import { useContext } from 'react'
+import React from 'react'
+import { ThemeContext } from '../../context/ThemeContext'
+export default function ThemeButton() {
    const [isDarks, setIsDarks] = useState(true)
-   const [theme, setTheme] = useState()
    console.log(isDarks)
-   //    const { theme, setTheme } = React.useContext(ThemeContext)
+   const { theme, setTheme } = React.useContext(ThemeContext)
    // Check the Theme
-   useEffect(() => {
-      if (isDarks) {
-         setTheme('dark')
-      } else {
-         setTheme('light')
-      }
-   }, [])
-
+   if (isDarks) {
+      setTheme('dark')
+   } else {
+      setTheme('light')
+   }
+   function isDark() {
+      return theme === 'dark'
+   }
    return (
       <div className="">
          <Switch
             checked={isDarks}
             onChange={() => setIsDarks(!isDarks)}
-            className={`${isDarks ? 'bg-primary' : 'bg-[#CCCCCC]'}
+            className={`${isDarks ? 'bg-[#2096F3]' : 'bg-[#CCCCCC]'}
           relative inline-block w-[50px] h-[26px] rounded-xl`}
          >
             <span
