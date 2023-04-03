@@ -5,7 +5,7 @@ import { ThemeProvider } from '../context/ThemeContext'
 const MainLayout = ({ children, pageTitle }) => {
    return (
       <ThemeProvider>
-         <main className="w-full h-screen bg-center bg-cover dark:bg-darkblue">
+         <main className="w-full h-screen bg-light bg-center bg-cover dark:bg-dark">
             <Header />
             {children}
             <Footer />

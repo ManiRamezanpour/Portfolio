@@ -8,7 +8,7 @@ import MainLayout from '../Layout/Main'
 export default function IndexPage() {
    return (
       <MainLayout>
-         <main className='dark:bg-darkblue'>
+         <main className='bg-light dark:bg-dark'>
          <ScrollToTop/>
          <Landing />
          <AboutME />

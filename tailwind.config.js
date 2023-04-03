@@ -12,12 +12,23 @@ module.exports = {
             '4xl': '2rem',
          },
          colors: {
-            primary: '#675ba3',
-            // secondary: '#43474E',
-            secondary: "#B6A2BB",
-            white: "#FFFFFF",
-            darkblue: "#0A0027",
+            // ? purple theme
+            primary: '#865DFF',
+            secondary: "#FFA3FD",
+            light: "#F0EEED",
+            dark: "#191825",
+            // ? pink theme
+            // primary: '#C92C6D',
+            // secondary: "#609EA2",
+            // light: "#F0EEED",
+            // dark: "#332C39",
+            // ? blue theme
+            // primary: '#19A7CE',
+            // secondary: "#146C94",
+            // light: "#F6F1F1",
+            // dark: "#000000",
             gray: '#75707B'
+
          },
          letterSpacing: {
             'primary': '8.02px'

@@ -19,17 +19,17 @@ export default function ThemeButton() {
       return theme === 'dark'
    }
    return (
-      <div className="">
+      <div className="mx-2 mt-1">
          <Switch
             checked={isDarks}
             onChange={() => setIsDarks(!isDarks)}
-            className={`${isDarks ? 'bg-[#2096F3]' : 'bg-[#CCCCCC]'}
+            className={`${isDarks ? 'bg-secondary' : 'bg-[#CCCCCC]'}
           relative inline-block w-[50px] h-[26px] rounded-xl`}
          >
             <span
                aria-hidden="true"
                className={`${isDarks ? 'translate-x-7' : 'translate-x-0'}
-            pointer-events-none z-10 flex items-center h-[26px] w-[28px] transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out`}
+            pointer-events-none z-10 flex items-center h-[26px] w-[28px] transform rounded-full bg-light shadow-lg ring-0 transition duration-200 ease-in-out`}
             >
                {isDarks ? (
                   <img src={darkbutton} alt="the dark button" />
